@@ -22,5 +22,14 @@ pipeline {
                 sh 'scripts/deliver.sh' 
             }
         }
+
+
+        stage('Docker-deploy') {
+            steps {
+                sh 'scripts/docker.sh'
+            }
+        }
+
+
     }
 }
