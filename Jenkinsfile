@@ -34,16 +34,4 @@ pipeline {
 	}
 
 
-    }
-
-
-   agent {
-        docker {
-            args 'build -t jenkinsApp'
-            args 'run --name jenkinsApp-con jenkinsApp'
-        }
-    }
-
-
-
 }
