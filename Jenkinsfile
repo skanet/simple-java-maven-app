@@ -30,6 +30,12 @@ pipeline {
             }
         }
 
+        stage('Kubernetes-deploy') {
+            steps {
+                sh 'scripts/k8s.sh'
+            }
+        }
+
 
     }
 }
