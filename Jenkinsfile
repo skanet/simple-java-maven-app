@@ -23,15 +23,8 @@ pipeline {
         }
         stage('Deliver') { 
             steps {
-                sh './scripts/deliver.sh' 
+                sh './jenkins/scripts/deliver.sh' 
             }
         }
-
-        stage('Deploy') {
-	    steps {
-                sh './scripts/docker.sh'
-            }
-	}
-
-
+    }
 }
