@@ -1,2 +1,5 @@
 docker build -t  jenkinstest .
-docker run --name jenkinstest-con jenkinstest
+docker tag jenkinstest metabol/images:jenkinstest
+docker push metabol/images:jenkinstest
+docker run --name jenkinstest-con metabol/images:jenkinstest
+
